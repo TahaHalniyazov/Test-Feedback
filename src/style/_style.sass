@@ -1,0 +1,218 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    width: 100%
+    min-height: 100vh
+    font-family: 'Montserrat'
+    background: linear-gradient(45deg, #fff1eb, #ace0f9)
+ 
+
+.container
+    width: 100%
+    max-width: 1000px
+    padding: 0 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    margin-top: 100px
+
+.content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: #fff
+    padding: 40px
+    border-radius: 5px
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2)
+    .left-side
+        width: 25%
+        height: 100%
+        position: relative
+        display: flex
+        flex-direction: column
+        &:before
+            content: ''
+            position: absolute
+            height: 70%
+            width: 2px
+            background: #afafb6
+            right: -15px
+            top: 50%
+            transform: translateY(-50%)
+    
+    .right-side
+        width: 75%
+        margin-left: 75px
+        &-text
+            font-size: 23px
+            font-weight: 600
+            color: #3e2093
+            margin-bottom: 10px
+        .paragraph-lab
+            color: red
+            margin-bottom: 3px
+        p
+            margin-bottom: 14px
+       
+
+        .input-box
+            width: 100%
+            height: 50px
+            margin-bottom: 30px
+            input, textarea
+                width: 100%
+                height: 100%
+                border: none
+                background: #f0f1f8
+                padding: 0 20px
+                border-radius: 5px
+                font-family: 'Montserrat'
+                margin-bottom: 3px
+            textarea
+                resize: none
+                padding: 20px
+                font-family: 'Montserrat'
+        .button
+            display: inline-block
+            
+        .button input[type="submit"]
+            color: white
+            background: #3e2093
+            border: none
+            outline: none
+            padding: 10px 20px
+            border-radius: 5px
+            transition: 0.2s
+            cursor: pointer
+            font-size: 18px
+            &:hover
+                background: #582ecc
+        label
+            font-size: 14px
+            color: #afafb6
+            padding-left: 5px
+
+
+
+        .message-box
+            min-height: 110px
+                
+
+    .details
+        margin-bottom: 15px
+        text-align: center
+        
+        img
+            width: 25px
+            height: 25px
+            margin-bottom: 10px
+            
+            
+            
+
+    .adress-item, .phone-item, .email-item
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 7px
+        &-text
+            font-size: 14px
+            color: #afafb6
+
+
+.container-2 
+    width: 100%              
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 50px
+
+#click
+    display: none
+    
+    &:checked ~ .modal
+        display: flex
+        
+
+
+.btn
+    display: inline-block
+    background: #582ecc
+    color: #fff
+    padding: 15px 30px
+    border-radius: 10px
+    cursor: pointer
+    font-size: 18px
+
+.modal
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    justify-content: center
+    align-items: center
+    animation: fadeIn 0.3s ease forwards /* Применяем анимацию к модальному окну */
+
+
+    @keyframes fadeIn 
+        from 
+            opacity: 0 /* Начальное состояние - непрозрачность */
+        
+        to 
+            opacity: 1 /* Конечное состояние - полная прозрачность */
+    
+
+    
+    .blackout
+        position: absolute
+        width: 100%
+        height: 100%
+        background: #111
+        opacity: 0.2
+
+    .window
+        position: absolute
+        max-width: 600px
+        width: 100%
+        border: 1px solid #582ecc
+        background: #fff
+        z-index: 100
+        
+        
+
+        .window-title, .window-body
+            padding: 20px
+            border-bottom: 1px solid silver
+            h1
+                font-size: 22px
+
+        .window-bottom
+            padding: 20px
+            display: flex
+            justify-content: center
+            
+            .close
+                padding: 10px 20px
+                background: #582ecc
+                border-radius: 10px
+                cursor: pointer
+                color: #fff
+                
+
+
+.modal-open 
+    overflow: hidden
+    
+
+
+
+            
+
+
+
+    

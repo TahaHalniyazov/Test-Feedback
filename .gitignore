@@ -1,0 +1,12 @@
+# Папки
+node_modules/
+dist/
+cache/
+
+# Файлы
+.env
+.DS_Store
+
+# Папка и файлы для логов
+logs/
+*.log

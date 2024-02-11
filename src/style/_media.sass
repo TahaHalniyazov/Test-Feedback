@@ -1,0 +1,21 @@
+@media (max-width: 800px)
+    .content
+        height: 100%
+        flex-direction: column-reverse
+        .left-side
+            flex-direction: row
+            margin-top: 50px
+            width: 100%
+            justify-content: center
+            flex-wrap: wrap
+        &:before
+            display: none
+
+        .details
+            margin-right: 20px
+            &:last-child
+                margin-right: 0
+
+        .right-side
+            width: 100%
+            margin-left: 0
